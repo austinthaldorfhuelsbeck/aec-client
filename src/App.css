@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+@import url("https://use.typekit.net/zox5evz.css");
+
+body {
+  background-color: #BEB0A2;
+  background: linear-gradient(#BEB0A2, #eee0d9);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* nav { background-color: #DED1CA; } */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* --- Drop Shadow --- */
+main img {
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
+}
+
+.flex-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: questa-grande, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
+  letter-spacing: 0.02em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: calluna-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 29px;
+  letter-spacing: .15em;
+  line-height: 1.6em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: calluna-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.21em;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  color: #995738;
+}
+
+p {
+  font-family: questa-grande, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
+.asterisk {
+  font-size: 12px;
+  text-align: left;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+
+.navbar-nav, h2 { color: #995738; }
+
+.btn-outline-primary {
+  font-family: bebas-neue, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 29px;
+  text-transform: uppercase;
+  color: #C25638;
+  border-color: #C25638;
+  margin: 3rem 0 3rem;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  border-color: #C25638;
+  background-color: #C25638;
+}
+
+.btn {
+  border-radius: 0px;
+  padding: 1rem 2rem;
+  border: 2px solid;
+}
+
+.overlay-text {
+  display: block;
+  padding-top: 8rem;
+}
+
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+
+.padded { padding: 3rem 1rem 3rem; }
+
+a { color: #fff; }
+.dark-social { color:hsla(0, 0%, 0%, 0.6); }
+a:hover { color: #995738; }
+
+.white-text { color: #fff; }
+
+.hover-border:hover {
+  border: 5px solid;
+  border-color: #fff;
+}
+
+.banner-video {
+  height: 400px;
+}
+
+.video-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inset-image {
+  width: 100%;
+  object-fit: contain;
+  box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.inline-image {
+  width: 100%;
+  box-shadow: none;
+}
+
+.badge-img {
+  max-height: 150px;
+  box-shadow: none;
+}
+
+.tiny-text {
+  color: #777;
+  font-size: 12px;
+}
+
+.big-text { font-size: 2rem; }
+
+.black-text {
+  color: black;
+  font-weight: 700;
+}
+
+.font-awesome { font-size: 15rem; }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-links a {
+  font-size: 1.3rem;
+  color: #181818;
+}
+
+@media all and (min-width: 768px) {
+  .banner-video, .video-box {
+    width: 100%;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .inset-image {
+    width: 70%;
+    border-radius: 1em;
+    margin: 0 auto;
   }
 }
