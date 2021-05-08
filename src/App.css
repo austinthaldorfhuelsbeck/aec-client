@@ -75,6 +75,10 @@ p {
   text-align: left;
 }
 
+/* .navbar { position: absolute; } */
+
+.navbar-nav, h2 { color: #995738; }
+
 .nav-link {
   text-transform: uppercase;
   font-family: brandon-grotesque, sans-serif;
@@ -83,7 +87,7 @@ p {
   letter-spacing: 0.04em;
 }
 
-.navbar-nav, h2 { color: #995738; }
+.navbar-nav .menu-right a { color: #FFF; }
 
 .btn-outline-primary {
   font-family: bebas-neue, sans-serif;
@@ -128,6 +132,10 @@ a:hover { color: #995738; }
 .hover-border:hover {
   border: 5px solid;
   border-color: #fff;
+}
+
+.featured-films {
+  margin: 2rem;
 }
 
 .banner-video {
