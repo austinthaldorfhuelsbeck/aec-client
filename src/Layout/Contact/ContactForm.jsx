@@ -1,7 +1,7 @@
-import axios from "axios";
-import { useState } from "react";
-
-const REACT_APP_API_URL = "https://aec-api-austinthaldorfhuelsbeck.vercel.app"
+import React, { useState } from "react"
+import emailjs from 'emailjs-com'
+import{ init } from 'emailjs-com'
+init("user_CvpPf1sJ7rZo6giCrFhIr")
 
 export default function ContactForm() {
   // FORM STATE
@@ -25,17 +25,29 @@ export default function ContactForm() {
       [target.id]: target.value,
     });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios
-      .post(`${REACT_APP_API_URL}/send`, { ...formData })
-      .then(setFormData(initialFormState))
-      .then(setIsThankYou(true));
+    try {
+      // console.log(
+      //   "Service: ", process.env.REACT_APP_SERVICE_ID,
+      //   "Template: ", process.env.REACT_APP_TEMPLATE_ID,
+      //   "User: ", process.env.REACT_APP_USER_ID
+      // )
+      await emailjs.sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_USER_ID
+      )
+      setFormData(initialFormState)
+      setIsThankYou(true)
+    } catch (err) {
+      console.error(err)
+    }
   }
 
-  // Conditional Thanks
   const ThankYou = () => {
-    return isThankYou && <h3>Thank you for inquiring!</h3>;
+    return isThankYou && <h3>Thank you for inquiring!</h3>
   }
 
   // RENDER
@@ -47,7 +59,7 @@ export default function ContactForm() {
           <input
             type="text"
             className="form-control"
-            id="clientName"
+            name="clientName"
             placeholder="Your name here"
             onChange={handleChange}
             value={formData.clientName}
@@ -59,7 +71,7 @@ export default function ContactForm() {
           <input
             type="text"
             className="form-control"
-            id="partnerName"
+            name="partnerName"
             placeholder="Your partner's name here"
             onChange={handleChange}
             value={formData.partnerName}
@@ -71,7 +83,7 @@ export default function ContactForm() {
           <input
             type="email"
             className="form-control"
-            id="email"
+            name="email"
             placeholder="E.g. myemail@email.com"
             onChange={handleChange}
             value={formData.email}
@@ -83,7 +95,7 @@ export default function ContactForm() {
           <input
             type="tel"
             className="form-control"
-            id="phoneNumber"
+            name="phoneNumber"
             placeholder="E.g. 541 444 0755"
             onChange={handleChange}
             value={formData.phoneNumber}
@@ -94,7 +106,7 @@ export default function ContactForm() {
           <input
             type="date"
             className="form-control"
-            id="weddingDate"
+            name="weddingDate"
             placeholder="MM/DD/YYYY"
             onChange={handleChange}
             value={formData.weddingDate}
@@ -105,7 +117,7 @@ export default function ContactForm() {
           <input
             type="text"
             className="form-control"
-            id="venue"
+            name="venue"
             placeholder="E.g. 742 Evergreen Terrace, Snohomish"
             onChange={handleChange}
             value={formData.venue}
@@ -115,7 +127,7 @@ export default function ContactForm() {
           <label htmlFor="referral">How did you hear about us?</label>
           <select
             className="form-control"
-            id="referral"
+            name="referral"
             onChange={handleChange}
             value={formData.referral}
           >
@@ -135,7 +147,7 @@ export default function ContactForm() {
           <label htmlFor="additionalInfo">Tell us some more about you!</label>
           <textarea
             className="form-control"
-            id="additionalInfo"
+            name="additionalInfo"
             placeholder="What do we need to know about the wedding?"
             onChange={handleChange}
             value={formData.additionalInfo}
@@ -145,5 +157,5 @@ export default function ContactForm() {
       </form>
       <ThankYou />
     </div>
-  );
+  )
 }

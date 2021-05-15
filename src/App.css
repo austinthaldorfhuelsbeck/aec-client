@@ -29,6 +29,8 @@ main img {
   object-fit: cover;
 }
 
+.contain { overflow-x: hidden; }
+
 h1 {
   font-family: questa-grande, serif;
   font-weight: 400;
