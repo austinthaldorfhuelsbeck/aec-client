@@ -22,7 +22,7 @@ export default function ContactForm() {
   const handleChange = ({ target }) => {
     setFormData({
       ...formData,
-      [target.id]: target.value,
+      [target.name]: target.value,
     });
   };
   const handleSubmit = async (e) => {
