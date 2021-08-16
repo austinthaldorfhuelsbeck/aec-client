@@ -17,9 +17,9 @@ export default function Investment() {
 
       <div className="row my-4">
         <img
-          src="https://storage.googleapis.com/austin-and-emily-website/kailey-kyle.jpg"
-          title="Kailey + Kyle"
-          alt="Kailey + Kyle"
+          src="https://storage.cloud.google.com/aec-site-images/shinai%20sean%20wide.png?authuser=3"
+          title="Shinai + Sean"
+          alt="Shinai + Sean"
           className="flex-img"
           data-aos="fade"
         />
@@ -37,7 +37,7 @@ export default function Investment() {
         <div className="col col-12 col-md-6 my-auto px-3">
           <h3 className="big-text my-3">Investment</h3>
           <p>
-            Wedding videography coverage starts at <strong>$3150</strong>.<br />
+            Wedding videography coverage starts at <strong>$3450</strong>.<br />
             Your collection is fully customizable to your needs through
             a-la-carte style add-ons.<br />
             <em>
@@ -52,8 +52,8 @@ export default function Investment() {
         </div>
         <div className="col col-12 col-md-6 my-auto px-3">
           <img
-            alt="Wedding Rings"
-            src="https://storage.cloud.google.com/austin-and-emily-website/wedding-rings.jpg?authuser=2"
+            alt="Henna"
+            src="https://storage.cloud.google.com/aec-site-images/henna.png?authuser=3"
             className="inline-image"
           />
         </div>
@@ -66,7 +66,7 @@ export default function Investment() {
       <div className="row my-5">
         <img
           alt="Investment Guide"
-          src="https://storage.cloud.google.com/austin-and-emily-website/investment-guide_page5.jpg?authuser=2"
+          src="https://storage.cloud.google.com/aec-site-images/pricing.png?authuser=3"
           className="inline-image"
         />
       </div>
