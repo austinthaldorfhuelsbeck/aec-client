@@ -3,14 +3,15 @@
 body {
   background-color: #BEB0A2;
   background: linear-gradient(#BEB0A2, #eee0d9);
+  border: 25px solid #f5f2f1;
 }
 
 /* nav { background-color: #DED1CA; } */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
