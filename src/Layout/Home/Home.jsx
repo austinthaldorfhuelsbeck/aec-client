@@ -93,24 +93,42 @@ export default function Home() {
 
         <div className="row my-5">
           <div className="mx-auto">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/5ba2be89f7939283452926ac/1610425533993-2000X6I96TVZQDZPFGEB/ke17ZwdGBToddI8pDm48kO2pS9cMHbO4RvHPc8Skf1tZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7SSwGn0TPzISNt3iSJufpcvR7xFZ2oYA-YTitnkXPCuTgiUfhLEJ_Uxi_cK3qclb8w/junebugbadgecircle.png?format=300w"
-              alt="Junebug Weddings, Approved Vendor"
-              className="badge-img px-3"
-              data-aos="fade"
-            />
-            <img
-              src="https://www.xoedge.com/myaccount/2019/website-share/VendorBadge_AsSeenOnWeb.png"
-              alt="As Seen On The Knot"
-              className="badge-img px-3"
-              data-aos="fade"
-            />
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/5ba2be89f7939283452926ac/1610425692230-3THLQH8PO3INF26JFH4H/ke17ZwdGBToddI8pDm48kKeAffqMWCnn7OxQXrfTl2FZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7YmDye92LJlx5Z6JHLEUGa2fBfAhi5Seck9gsgbvzej-kames5xU7QYa2wkLmeNDOg/WeddingWire_Badge.png?format=300w"
-              alt="As Seen On Wedding Wire"
-              className="badge-img px-3"
-              data-aos="fade"
-            />
+            <a
+              href="https://junebugweddings.com/vendors/wedding-videographers/washington/seattle/Austin-and-Emily-Creative"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5ba2be89f7939283452926ac/1610425533993-2000X6I96TVZQDZPFGEB/ke17ZwdGBToddI8pDm48kO2pS9cMHbO4RvHPc8Skf1tZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7SSwGn0TPzISNt3iSJufpcvR7xFZ2oYA-YTitnkXPCuTgiUfhLEJ_Uxi_cK3qclb8w/junebugbadgecircle.png?format=300w"
+                alt="Junebug Weddings, Approved Vendor"
+                className="badge-img px-3"
+                data-aos="fade"
+              />
+            </a>
+            <a
+              href="https://www.theknot.com/marketplace/austin-and-emily-creative-seattle-wa-2029891#:~:text=Based%20in%20Seattle%2C%20WA%2C%20Austin,is%20a%20wedding%20videography%20company.&text=As%20such%2C%20they%20strive%20to,videographers%20value%20the%20little%20moments."
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://www.xoedge.com/myaccount/2019/website-share/VendorBadge_AsSeenOnWeb.png"
+                alt="As Seen On The Knot"
+                className="badge-img px-3"
+                data-aos="fade"
+              />
+            </a>
+            <a
+              href="https://www.weddingwire.com/biz/austin-and-emily-creative/56f4f64bd757e9a0.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5ba2be89f7939283452926ac/1610425692230-3THLQH8PO3INF26JFH4H/ke17ZwdGBToddI8pDm48kKeAffqMWCnn7OxQXrfTl2FZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7YmDye92LJlx5Z6JHLEUGa2fBfAhi5Seck9gsgbvzej-kames5xU7QYa2wkLmeNDOg/WeddingWire_Badge.png?format=300w"
+                alt="As Seen On Wedding Wire"
+                className="badge-img px-3"
+                data-aos="fade"
+              />
+            </a>
           </div>
         </div>
       </main>
