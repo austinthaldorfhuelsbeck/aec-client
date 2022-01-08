@@ -6,7 +6,7 @@ export default function NavBar() {
       <div className="container-fluid">
         <Link to="/">
           <img
-            src="https://storage.googleapis.com/austin-and-emily-website/black%20transparent.png"
+            src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/black%20transparent.png"
             alt="Austin + Emily"
             width="200px;"
           />

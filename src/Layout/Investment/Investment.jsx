@@ -17,7 +17,7 @@ export default function Investment() {
 
       <div className="row my-4">
         <img
-          src="https://storage.cloud.google.com/aec-site-images/shinai%20sean%20wide.png?authuser=3"
+          src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/shinai+sean+wide.png"
           title="Shinai + Sean"
           alt="Shinai + Sean"
           className="flex-img"
@@ -53,7 +53,7 @@ export default function Investment() {
         <div className="col col-12 col-md-6 my-auto px-3">
           <img
             alt="Henna"
-            src="https://storage.cloud.google.com/aec-site-images/henna.png?authuser=3"
+            src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/henna.png"
             className="inline-image"
           />
         </div>
@@ -66,7 +66,7 @@ export default function Investment() {
       <div className="row my-5">
         <img
           alt="Investment Guide"
-          src="https://storage.cloud.google.com/aec-site-images/pricing.png?authuser=3"
+          src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/pricing.png"
           className="inline-image"
         />
       </div>

@@ -28,7 +28,7 @@ export default function Footer() {
           <img
             className="fill-img"
             alt="bridesmaids"
-            src="https://storage.googleapis.com/austin-and-emily-website/cassandra-bridal-party.jpg"
+            src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/cassandra-bridal-party.jpg"
           />
           <h2 className="text-center" data-aos="fade-up">
             <FontAwesomeIcon icon={faAngleDoubleDown} className="font-awesome pt-5" />

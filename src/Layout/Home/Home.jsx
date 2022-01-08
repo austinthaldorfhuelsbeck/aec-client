@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 
 export default function Home() {
   const videoSrc =
-    "https://storage.googleapis.com/austin-and-emily-website/reel-bg-vid.mp4";
+    "https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-video/reel-bg-vid.mp4";
 
   return (
     <div className="container mt-5">
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
           <div className="row mx-auto my-2">
             <img
-              src="https://storage.googleapis.com/austin-and-emily-website/Emily-Austin.jpg"
+              src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/Emily-Austin.jpg"
               alt="Henry Tieu Photography"
               title="Austin + Emily"
               className="inset-image mt-5"

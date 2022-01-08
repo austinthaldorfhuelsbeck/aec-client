@@ -8,7 +8,7 @@ import Footer from "../Footer/Footer";
 
 export default function Films(props) {
   const videoSrc =
-    "https://storage.googleapis.com/austin-and-emily-website/After%20The%20Rain-Couple%20Trailer-v7.mp4";
+    "https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-video/After%20The%20Rain-Couple%20Trailer-v7.mp4";
 
   return (
     <>
