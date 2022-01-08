@@ -9,7 +9,7 @@ import Investment from "./Investment/Investment";
 
 export default function Layout() {
   return (
-    <div className="container">
+    <div className="contain">
       <NavBar />
       <Switch>
         <Route exact path="/">

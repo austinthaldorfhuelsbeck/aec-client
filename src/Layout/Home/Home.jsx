@@ -9,10 +9,10 @@ export default function Home() {
     "https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-video/reel-bg-vid.mp4";
 
   return (
-    <div className="container mt-5">
+    <div className="contain mt-5">
       <main>
         <VideoBanner src={videoSrc} />
-        <div className="my-2 align-center">
+        <div className="m-5 align-center">
           <div className="row my-4">
             <h3 className="mx-auto my-2">
               Your wedding is a brief moment in a story that you'll work to
