@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import SocialLinks from "../SocialLinks";
 
 export default function Footer() {
