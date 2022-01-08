@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+package-lock.json
+
+# sensitive
+.env
 
 # testing
 /coverage
@@ -23,3 +27,7 @@ yarn-debug.log*
 yarn-error.log*
 
 .vercel
+
+# too large
+/public/video
+

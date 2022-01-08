@@ -1,16 +1,13 @@
 import { Link } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
-import InstagramFeed from "./InstagramFeed";
 import SocialLinks from "../SocialLinks";
 
 export default function Footer() {
   return (
-    <footer className="parallax">
-      <div className="parallax__group">
-        <div className="parallax__layer parallax__layer--base">
-          <div className="text-center pad-top">
+    <footer>
+      <div className="overlap-group">
+        <div className="overlap-layer top">
+          <div className="text-center">
             <h2 className="white-text">
               <Link to="/contact">Tell us your love story.</Link>
             </h2>
@@ -24,19 +21,16 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="parallax__layer parallax__layer--back">
+        <div className="overlap-layer">
           <img
             className="fill-img"
             alt="bridesmaids"
-            src="https://storage.googleapis.com/austin-and-emily-website/cassandra-bridal-party.jpg"
+            src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/cassandra-bridal-party.jpg"
           />
-          <h2 className="text-center" data-aos="fade-up">
-            <FontAwesomeIcon icon={faAngleDoubleDown} className="font-awesome pt-5" />
-          </h2>
         </div>
       </div>
 
-      <div className="parallax__group pad-top">
+      <div className="pad-top">
         <section className="sub-footer">
           <div className="footer-content">
             <h2 className="align-center mb-4">
@@ -47,7 +41,6 @@ export default function Footer() {
                 
               </a>
             </h2>
-            <InstagramFeed />
           </div>
 
           <SocialLinks />

@@ -5,27 +5,27 @@ import Footer from "../Footer/Footer";
 
 export default function Investment() {
   return (
-    <div className="mt-5">
-      <div className="row my-5 align-center">
-        <h1 className="mx-auto">
-          Investment Guide
-        </h1>
-      </div>
-      <h3 className="text-center" data-aos="fade-up">
-        <SocialLinks />
-      </h3>
+    <>
+      <div className="container mt-5">
+        <div className="row my-5 align-center">
+          <h1 className="mx-auto">
+            Investment Guide
+          </h1>
+        </div>
+        <h3 className="text-center" data-aos="fade-up">
+          <SocialLinks />
+        </h3>
 
-      <div className="row my-4">
-        <img
-          src="https://storage.cloud.google.com/aec-site-images/shinai%20sean%20wide.png"
-          title="Kailey + Kyle"
-          alt="Kailey + Kyle"
-          className="flex-img"
-          data-aos="fade"
-        />
-      </div>
+        <div className="row my-4">
+          <img
+            src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/shinai+sean+wide.png"
+            title="Shinai + Sean"
+            alt="Shinai + Sean"
+            className="flex-img"
+            data-aos="fade"
+          />
+        </div>
 
-      <div className="container">
         <div className="row my-4 align-left">
           <h2>
             Authentic + Captivating Films
@@ -33,7 +33,6 @@ export default function Investment() {
             <em>for passionate couples.</em>
           </h2>
         </div>
-      
 
         <div className="row my-4 align-left">
           <div className="col col-12 col-md-6 my-auto px-3">
@@ -54,8 +53,8 @@ export default function Investment() {
           </div>
           <div className="col col-12 col-md-6 my-auto px-3">
             <img
-              alt="Wedding Rings"
-              src="https://storage.cloud.google.com/aec-site-images/henna.png"
+              alt="Henna"
+              src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/henna.png"
               className="inline-image"
             />
           </div>
@@ -68,14 +67,13 @@ export default function Investment() {
         <div className="row my-5">
           <img
             alt="Investment Guide"
-            src="https://storage.cloud.google.com/aec-site-images/pricing.png"
+            src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/pricing.png"
             className="inline-image"
           />
         </div>
+
       </div>
-
       <Footer />
-
-    </div>
+    </>
   )
 }
