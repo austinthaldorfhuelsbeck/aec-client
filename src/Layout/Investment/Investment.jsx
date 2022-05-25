@@ -67,7 +67,7 @@ export default function Investment() {
         <div className="row my-5">
           <img
             alt="Investment Guide"
-            src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/pricing.png"
+            src="https://austin-and-emily-creative.s3.us-east-2.amazonaws.com/aec-img/aec-pricing-for-web-2022.png"
             className="inline-image"
           />
         </div>
